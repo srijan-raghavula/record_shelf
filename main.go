@@ -24,6 +24,8 @@ func main() {
 
 	mux.HandleFunc("GET /shelf/traffic", sCfg.getVisits)
 
+	mux.HandleFunc("POST /login", login)
+
 	log.Println("serving from", rootDir, "at localhost", shelf.Addr)
 	log.Fatal(shelf.ListenAndServe())
 }
