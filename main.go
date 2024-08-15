@@ -24,7 +24,17 @@ func main() {
 
 	mux.HandleFunc("GET /shelf/traffic", sCfg.getVisits)
 
+	// USER PROFILE RELATED ENDPOINTS
 	mux.HandleFunc("POST /login", login)
+	mux.HandleFunc("POST /add/users", createUser)
+	mux.HandleFunc("PUT /update/users/{userID}", updateUser)
+	mux.HandleFunc("DELETE /remove/users/{userID}", removeUser)
+
+	// FILES RELATED ENDPOINTS
+	mux.HandleFunc("POST /files/users/{userID}", addFile)
+	mux.HandleFunc("GET /files/users/{userID}", getFile)
+	mux.HandleFunc("PUT /files/users/{userID}", replaceFile)
+	mux.HandleFunc("DELETE /files/users/{userID}", removeFile)
 
 	log.Println("serving from", rootDir, "at localhost", shelf.Addr)
 	log.Fatal(shelf.ListenAndServe())
