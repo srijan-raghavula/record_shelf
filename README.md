@@ -1,6 +1,6 @@
 # record_shelf
 
-##API endpoints
+## API endpoints
 
 User profile endpoints:
 - `GET /shelf/traffic` gives a simple html as response with the count of how many times the `/` endpoint was visited.
