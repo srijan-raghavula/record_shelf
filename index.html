@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record Shelf</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="login-box">
-        <h2>Record Shelf</h2>
+    <div class="wrapper">
+        <div class="title">
+            <span class="fonts1">Record Shelf</span>
+        </div>
+        <script src="https://kit.fontawesome.com/95a75547ea.js" crossorigin="anonymous"></script>
         <form action="#">
-            <div class="input-grp">
-                <input type="text" name="username" placeholder="Username" required>
+            <div class="row">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="User Id" required>
             </div>
-            <div class="input-grp">
-                <input type="password" name="password" placeholder="Password" required>
+            <div class="row">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" required>
             </div>
-            <button type="submit" class="button">Sign in</button>
+            <div class="row">
+                <button><span>Sign in</span></button>
+            </div>
         </form>
     </div>
-
+    <script src="script.js"></script>
 </body>
-
 </html>

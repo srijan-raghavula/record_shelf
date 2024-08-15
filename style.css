@@ -1,70 +1,98 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+*{
     margin: 0;
     padding: 0;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 70vh;
-    background-color: rgb(179, 183, 184);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.login-box{
-    width: 35%;
-    margin: 5%;
-    min-height: 75%;
-    min-width: 25%;
-    padding: 25px;
-    background-color: azure;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: #f2cece;
+}
+
+.wrapper{
+    width: 380px;
+    background-color: #E3867D;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+}
+
+.wrapper .title{
+    
+    line-height: 80px;
+    background-color: #962E2A;
+    padding-left: 20px;
+    border-radius: 5px 5px 0 0;
+    font-size: 27px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.wrapper form{
+    padding: 30px 20px 25px 25px;
+
+}
+.wrapper form .row{
+
+    height: 45px;
+    margin-bottom: 15px;
     position: relative;
 }
 
-.login-box h2{
-    margin-top: 50px;
-    font-size: 57px;
-}
-.input-grp{
-    margin-bottom: 20px;
-    text-align: left;
-
-}
-
-input {
+.wrapper form .row input{
+    height: 100%;
     width: 100%;
-    padding: 11px;
-    border-radius: 9px;
-    margin: 0 -12px;
-    border: 1px solid #d2c5c5;
-    
+    outline: none;
+    border-radius: 5px;
+    border-color: black; 
+    padding-left: 60px;
+    border: 1px solid rgb(220, 176, 176);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
 }
 
-button {
+.wrapper form .row button{
+    height: 100%;
     width: 100%;
-    padding: 12px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 9px;
+    background-color: #962E2A;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    font-weight: 400    ;
+    border-radius: 5px;
+    border: 1px solid rgb(196, 108, 108);
     cursor: pointer;
-    font-size: 16px;
+    transition: all 0.5s;
 }
 
-button:hover {
-    background-color: #2980b9;
+.wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    font-size: 20px;
+    background-color: #962E2A;
+    color: rgb(255, 255, 255);
+    border: 1px solid #962E2A;
+    display: flex;
+    align-items: center;
+    outline: none;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+}
+.wrapper form .row button:hover {background-color: #782421}
+
+.wrapper form .row button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
-.register-link {
-    margin-top: 15px;
-    font-size: 14px;
-}
 
-.register-link a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
+.montserrat-fonts1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
